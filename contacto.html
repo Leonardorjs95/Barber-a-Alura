@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes2/logo.png" alt="Logo Barbería Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">contacto</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXX XXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron"  required></textarea>
+
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Días</th>
+                        <th>Horarios</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </main>
+        <footer>
+            <img src="imagenes2/logo-blanco.png" alt="Logo Barbería Alura">
+            <p class="copyright">&copy CopyRight Alura 2020</p>
+            <p id="anotaciones">* El comando form es para formulario.
+                * input nos sirve para crear cuadros de texto que el usuario puede llenar.
+                * La etiqueta label es para etiquetar, y para relacionar la etiqueta con el elemento, usamos de referencia el id del elemento por medio del comando for.
+                * El input type="submit" crea el botón de enviar.
+                * Para un texto mas grande, usamos textarea.
+                * Para opciones de selección de una opción utilizamos input type radio.
+                * El name "contacto" en html lo usamos para que solo deje seleccionado un botón.
+                * El checkbox se usa para un cuadro de selección o de verificación.
+                * Cuando tenemos en css varias etiquetas dentro de una principal y queremos agregar los mismos atributos a algunas etiquetas hijas y no a todas, podemos usar la notación de llamado de etiqueta de una y de la otra en una misma línea, separadas por una como, por ejemplo: form input, form textarea{}
+                * La prelación que tiene en cuenta el css para aplicar ordenes es la siguiente: 
+                - Inline (html) (1000)
+                - ID (100)
+                - Class (10)
+                - Etiqueta (1)
+                Tener en cuenta que los valores se pueden sumar, por ejemplo si tengo:
+                etiqueta.class (11) ejemplo (p.padron)
+                * Para una lista desplegable usamos el comando select y para las opciones dentro del desplegables se añaden con el comando option.
+                * Para conocer como hacer los diferentes input de acuerdo a los teléfonos y cómo poner el type, visitamos la página mobileinputtypes.com
+                * Para que un campo sea obligatorio o requerido, usamos el comando required.
+                * El comando placeholder sirve como guía en nuestros cuadros de texto para mostrar a manera de ejemplo lo que queremos que ingrese al campo.
+                * El comando checked ayuda a poner algún valor por defecto.
+                * fieldset funciona como el div pero este agrupa elementos que comparten una relación estrecha entre ellos.
+                * legend funciona igual al p
+                * alt dentro de la imagen hace referencia a una pequeña descripción de la misma.
+                * el transition: 2s all; hace que al momento de posicionarnos en el cuadro, el cambio de color o escala por ejemplo, no sea inmediato sino que hayan 2 segundos de transición en el background, la escala, la letra y todas las componentes.
+                * el cursor: pointer; cambia el estilo del puntero a la manito
+                * el transform me puede cambiar la escala, puede rotar elementos y varias cosas más.
+                * Para crear tablas en nuestra página debemos usar la etiqueta table y los tr son las filas y los td son las columnas
+                * Para las tablas también existe un head, un body y un foot antecedido de la letra t. Para el head es posible reemplazar los td con th
+                * Una vez más, padding: 8px 15px; son 8 píxeles superior e inferior y 15 píxeles a los costados.
+            </p>
+        </footer>
+
+    </body>
+</html>

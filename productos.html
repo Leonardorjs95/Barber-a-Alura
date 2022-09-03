@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Productos - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes2/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">contacto</a></li>
+                    </ul>
+                </nav>    
+            </div>
+
+        </header>
+
+        <main>
+            <ul class="productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="imagenes2/cabello.jpg">
+                    <p class="producto-descripcion"> Con tijera o máquina a gusto del cliente</p>
+                    <p class="producto-precio">$ 10.00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="imagenes2/barba.jpg">
+                    <p class="producto-descripcion">Corte y diseño profesional de barba</p>
+                    <p class="producto-precio">$ 08.00</p>
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="imagenes2/cabello+barba.jpg">
+                    <p class="producto-descripcion">Paquete completo de cabello y barba</p>
+                    <p class="producto-precio">$ 15.00</p>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <img src="imagenes2/logo-blanco.png">
+            <p class="copyright">&copy CopyRight Alura 2020</p>
+            <p id="anotaciones">* Se pone la imagen entre h1 para dar énfasis a la misma.
+                * el padding aumenta el tamaño del elemento.
+                * La etiqueta a de anchor nos ayuda a hipervincular los textos.
+                *La etiqueta nav ayuda a que allí se consignen los elementos para la navegación o hipervínculos.
+                * El margin en css nos ayuda a darle un margen a la etiqueta, siendo arriba el primer parámetro, derecha, abajo e izquierda los siguientes.
+                * Explicando el niv a:
+                nav a{
+                    text-transform: uppercase; cambia el texto a mayúscula
+                    color: #000000; asigna color negro a las letras
+                    font-weight: bold; les da negrita a las letras
+                    font-size: 22px; les cambia el tamaño a las letras
+                    text-decoration: none; le quita la línea de subrayado al hipervínculo.
+                    }
+                * Debido a que el navegador genera algunas modificaciones por defecto, es necesario resetear algunas etiquetas. Para ello existe el archivo reset para resetear esas etiquetas y eliminar el valor por defecto. Para ello debemos referenciar dicho archivo de manera similar a como llamamos a nuestro archivo css.
+                * En la etiqueta nav del css posicionamos nuestros hipervínculos de forma absoluta (absolute), esto quiere decir que el movimiento es mayor que el relativo(relative) y contrario al estático(static) que se mantiene fijo en una sola posición.
+                * Usamos Main para el cuerpo de la página dentro del body.
+                * El box-sizing en css border-box; hace que nuestro contenido no salga de la caja o esa linea horizontal.
+                * Recordar que al ingresar los tamaños se hace definiendo primero el eje vertical y luego el eje horizontal, por ejemplo: margin: 0 1.5%; - padding: 30px 20px; - margin: 0 auto;
+                * El border es Un borde sólido, con 3 pixeles de ancho, entre el padding y el margin.
+                * border: 2px solid #000000; =
+                border-color: #000000;
+                border-width: 2px;
+                border-style: solid;
+                * Top=arriba, bottom=abajo
+                * border-radius: 10px; =
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                * border-radius: 10px 25px 40px 50px; =
+                border-top-left-radius: 10px;
+                border-top-right-radius: 25px;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 40px; (sentido manecillas del reloj)
+                * El hover captura el movimiento de nuestro Mause. como lo podemos ver en la etiqueta nav, que al pasar el mause por encima de nuestro texto, las letras cambian de color y se subrayan.
+                * El active captura el click derecho que el usuario hace en el bloque con esta propiedad.
+                * .productos li:hover h2 para esta instrucción se le está diciendo al hover que afecte al h2, si no se hiciera de este modo, el texto seguiría en el mismo matamaño que .productos h2 ya que se le da prioridad a este font-size.
+                * footer en html se emplea para el pie de página.
+                * &copy es el copyright
+            </p>
+        </footer>
+
+    </body>
+</html>

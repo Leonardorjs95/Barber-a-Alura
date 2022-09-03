@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel= "stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+                
+    </head>
+    <body>
+
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes2/logo.png" alt="Logo Barbería Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">contacto</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>
+
+        <img class="banner" src="imagenes/banner.jpg">
+
+        <main>
+            <!-- <p>Prueba anexo</p> -->
+            <section class="principal">
+                <h2 class="titulo-principal" style="text-align: center;">Sobre la Barbería Alura</h2>
+
+                <img class="utensilios" src="imagenes/utensilios.jpg" alt="Utensilios de un barbero">
+
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.449840047712!2d-46.6323319!3d-23.588194799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2sco!4v1662105177177!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+
+            <section class="diferenciales">
+                <h3 class="titulo-principal">Diferenciales</h3>
+
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atención personalizada a los clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="imagenes/diferenciales.jpg" class="imagen-diferenciales">
+
+                </div>
+
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+
+        <footer>
+            <img src="imagenes2/logo-blanco.png" alt="Logo Barbería Alura">
+            <p class="copyright">&copy CopyRight Alura 2020</p>
+            <p id="anotaciones">* Cuando queremos alterar comportamientos usamos id y cuando queremos modificar estilos usamos las clases.
+                * Cuando cambiamos el tamaño del elemento de esta manera: font-size: 2em; con el 2em estamos indicando que queremos 2 veces el tamaño por defecto.
+                * El comando float en css nos permite darle a la imagen una característica de flotante, con eso el texto la puede bordear
+                * El clear nos ayuda a que cualquier configuración que venga de cualquier dirección sea quitada.
+                * En google fonts podemos encontrar varios tipos de letra abiertos.
+                * En el llamado de googleapis estamos dandole, junto con el css del body el estilo de letra Montserrat a todo nuestro texto.
+                * line-height en css funciona como una escala pero para texto.
+                * En css el etiqueta:first-child me modifica al primer elemento de esa etiqueta, el etiqueta:last-child me modifica el último elementode esa lista, el etiqueta:nth-child(2) me modifica el segundo elemento que yo quiera de esa lista y puede ser aplicado para el n-ésimo elemento que yo desee de la lista, y el etiqueta:nth-child(2n) me modifica los elementos pares de la lista por ejemplo, se puede 3n, 4n, etc. A todo esto se le denomina pseudoclases. Del mismo modo lo podemos hacer con una letra dentro de un renglón (first-letter) o con el primer renglón dentro de un párrafo (first-line). Esto tambien nos muestra la aplicación del before y el after que se explicarán adelante.
+                * Para realizar degradados en css podemos utilizar los comandos background: linear-gradient(90deg, orange 50%, blue, red, black); en el que podemos agregar la cantidad de colores que deseemos de derecha a izquierda, el ángulo en que van a estar esos colores separados (en nuestro caso son 90) y el porcentaje que queremos que ocupe ese color, en caso de no asignarlo, el programa lo toma uniformemente, para nuestro caso el naranja debe usar el 50% de la pantalla definida. El otro comando es el background: radial-gradient(orange 50%, blue, red, black); que similar al anterior nos permite adicionar los colores del centro hacia afuera que queremos y el espacio que estos ocupan.
+                * Con el las pseudoclases en clases podemos utilizar el after y el before que nos permite agregar algún elemento o característica a nuestra etiqute después y antes con ayuda del comando content: "*" (el * puede ser reemplazado con cualquier otro símbolo)
+                * Para encontrar la estrella buscamos unicode star en google y copiamos y pegamos.
+                * Ver anotación CSS de selección específica (Anexo).
+                * Es útil trabajar con calc y el valor en porcentaje para dimensionar alguna imagen para cualquier dispositivo y esta no se vea desproporcional. Para ello se podría usar wght: calc(40%).
+                * Como ya hemos visto, para definir el color podemos uisar rgb pero este comado tiene una característica especial y es que al usarlo como rgba podemos agregar al final el nivel de opacidad que queremos en niestro texto.
+                * Con el comando opacity podemos cambiar la opacidad del elemento
+                * En css box-shadow nos ayuda a darle sombra hacia afuera a nuestros elementos y se compone de cuatro parámetros, el tamaño de sombra horizontal, el vertical, la opcidad, el tamaño de la misma y su color. Podemos agregar más sombras y colores dentro del mismo comando. Como por ejemplo box-shadow: 10px 10px 30px 15px #000000, -10px -10px yellow, -15px 10px rgba(50,50,50,0.5); En el anterior caso, en el color amarillo los valores que toma son el largo y el ancho, la opcidad y tamaño los deja por defecto.
+                * Para generar una sombra hacia adentro podemos usar el comado box-shadow: inset como parámetros de separación de los bordes en los dos primeros, el tamaño de la sombra y el color de la misma.
+                * Para la sombra del texto utilizamos el text-shadow.
+                * Para tener un generador de sombras podemos buscar en google box shadow css generator mozilla, y así podemos profundizar en el tema.
+                * El meta name="viewport" content="width=device-width" nos sirve para adaptar nuestra página a cualquier otro dispositivo diferente al pc.
+                * Para hacer querys o consultas usamos @media.
+            </p>
+        </footer>
+    
+    </body>
+
+</html>
